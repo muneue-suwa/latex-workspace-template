@@ -76,4 +76,5 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontFamily": "Consolas, 游明朝, 'Courier New', monospace",
     "workbench.colorTheme": "Default Light+",
+    "files.eol": "\n",
 }
