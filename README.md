@@ -1,4 +1,4 @@
-# LaTex Workspace Template
+# LaTeX Workspace Template
 
 ## Environment
 
