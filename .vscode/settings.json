@@ -73,4 +73,7 @@
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "editor.wordWrap": "on",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.fontFamily": "Consolas, 游明朝, 'Courier New', monospace",
+    "workbench.colorTheme": "Default Light+",
 }
