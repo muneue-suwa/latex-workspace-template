@@ -56,6 +56,12 @@
                 "latexmk"
             ]
         },
+        {
+            "name": "pdfpLaTeX",
+            "tools": [
+                "pdfpLaTeX"
+            ]
+        },
     ],
     // ビルドのレシピに使われるパーツ
     "latex-workshop.latex.tools": [
@@ -68,12 +74,24 @@
                 "%DOC%"
             ],
         },
+        {
+            "name": "pdfpLaTeX",
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 $synctexoption",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
     ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
     "editor.formatOnSave": true,
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "editor.wordWrap": "on",
-    "latex-workshop.view.pdf.viewer": "tab",
     "editor.fontFamily": "Consolas, 游明朝, 'Courier New', monospace",
     "workbench.colorTheme": "Default Light+",
     "files.eol": "\n",
