@@ -5,8 +5,7 @@
 Windows Subsystem for Linux (WSL1)
 
 ```bash:version_infomation
-$ cat
-/etc/os-release
+$ cat /etc/os-release
 NAME="Ubuntu"
 VERSION="20.04.1 LTS (Focal Fossa)"
 ID=ubuntu
