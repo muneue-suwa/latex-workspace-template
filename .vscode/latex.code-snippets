@@ -12,6 +12,13 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"commentout": {
+		"prefix": "comment",
+		"body": [
+			"\\begin{comment}\n$1\n\\end{comment}"
+		],
+		"description": "Comment out for LaTeX"
+	},
 	"report": {
 		"prefix": "report",
 		"body": [
@@ -78,6 +85,59 @@
 			"%",
 			"%",
 			"\\end{document}",
+		]
+	},
+	"figure-template": {
+		"prefix": "figure-template",
+		"body": [
+			"\\begin{figure}[${1:hbtp}]\\centering",
+			"\\includegraphics[width=${2:8cm}]{figures/$3-crop.pdf}",
+			"\\caption{$4}",
+			"\\label{fig:$3}",
+			"\\end{figure}",
+		]
+	},
+	"figure-multiple-template": {
+		"prefix": "figure-multiple-template",
+		"description": "Add package: \\usepackage[subrefformat=parens]{subcaption}",
+		"body": [
+			"\\begin{figure}[${1:hbtp}]",
+			"%%%%%%%%",
+			"\\begin{minipage}[b]{${10:0.3}\\linewidth}",
+			"\\centering",
+			"\\includegraphics[keepaspectratio, scale=${10:0.3}]{figures/$2-crop.pdf}",
+			"\\subcaption{$3}\\label{$2}",
+			"\\end{minipage}",
+			"%%%%%%%%",
+			"\\begin{minipage}[b]{${10:0.3}\\linewidth}",
+			"\\centering",
+			"\\includegraphics[keepaspectratio, scale=${10:0.3}]{figures/$4-crop.pdf}",
+			"\\subcaption{$5}\\label{$4}",
+			"\\end{minipage}",
+			"%%%%%%%%",
+			"\\begin{minipage}[b]{${10:0.3}\\linewidth}",
+			"\\centering",
+			"\\includegraphics[keepaspectratio, scale=${10:0.3}]{figures/$6-crop.pdf}",
+			"\\subcaption{$7}\\label{$6}",
+			"\\end{minipage}",
+			"%%%%%%%%",
+			"\\caption{$8}\\label{$9}",
+			"%%%%%%%%",
+			"\\end{figure}",
+		]
+	},
+	"table-template": {
+		"prefix": "table-template",
+		"body": [
+			"\\begin{table}\\centering",
+			"\\caption{$1}",
+			"\\label{tab:$2}",
+			"\\begin{tabular}{${3:cl}}\\toprule",
+			"${4:題目中央} & ${5:\\multicolumn{1\\}{c\\}{題目中央\\}} \\\\\\ \\midrule",
+			"${6:要素中央} & ${7:要素左寄せ} \\\\\\",
+			"\\bottomrule",
+			"\\end{tabular}",
+			"\\end{table}"
 		]
 	}
 }
