@@ -71,7 +71,10 @@
             "args": [
                 "-silent",
                 "-outdir=%OUTDIR%",
-                "%DOC%"
+                // when TEXINPUTS is requrired
+                // "-e",
+                // "$ENV{'TEXINPUTS'}='../style//:' . $ENV{'TEXINPUTS'}",
+                "%DOC%",
             ],
         },
         {
