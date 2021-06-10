@@ -2,15 +2,15 @@
 
 ## Environment
 
-Windows Subsystem for Linux (WSL1)
+Windows Subsystem for Linux (WSL2)
 
 ```bash:version_infomation
 $ cat /etc/os-release
 NAME="Ubuntu"
-VERSION="20.04.1 LTS (Focal Fossa)"
+VERSION="20.04.2 LTS (Focal Fossa)"
 ID=ubuntu
 ID_LIKE=debian
-PRETTY_NAME="Ubuntu 20.04.1 LTS"
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
 VERSION_ID="20.04"
 HOME_URL="https://www.ubuntu.com/"
 SUPPORT_URL="https://help.ubuntu.com/"
@@ -22,9 +22,9 @@ UBUNTU_CODENAME=focal
 
 ## How to start LaTeX
 
-1. Install Visual Studio Code (VSCode). 
-1. Install [VSCode-extention: LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). 
-1. (If you use WSL-Debian or other Linux distributions,) Run `setup/setup.sh`
+1. Install Visual Studio Code (VSCode).
+1. Install [VSCode-extention: LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
+1. (If you use WSL-Ubuntu or other Linux distributions,) Run `setup/setup.sh`
 
 
 ## To use for multi file projects
@@ -42,3 +42,7 @@ Add **Magic comment** to the first line of TeX files as follows.
 [TeXテンプレート](http://hooktail.org/computer/index.php?TeX%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8)
 
 [James-Yu/LaTeX-Workshop - Multi File projects](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#multi-file-projects)
+
+## FYI
+
+[ehki/jIEEEtran - 電気学会/IEEE, 日英両対応bstファイル](https://github.com/ehki/jIEEEtran)
