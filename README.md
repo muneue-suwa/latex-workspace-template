@@ -48,7 +48,27 @@ Add **Magic comment** to the first line of TeX files as follows.
 % !TEX root = main.tex
 ```
 
-## Useful Repositories for this workspace template
+## How to add TeX-packages or style Files
+
+Edit `.vscode/settings.json` and add the packages or style files settings. For example, when you use `style/` directory for style files, add `"-e", "$ENV{'TEXINPUTS'}='../style//:' . $ENV{'TEXINPUTS'}",` as follows. `../style/` is the **relative path** from the TeX file which you compile.
+
+```json:settings.json
+"latex-workshop.latex.tools": [
+    {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-silent",
+            "-outdir=%OUTDIR%",
+            // when TEXINPUTS is requrired
+            "-e",
+            "$ENV{'TEXINPUTS'}='../style//:' . $ENV{'TEXINPUTS'}",
+            "%DOC%",
+        ],
+    },
+```
+
+## Useful TeX-Package Repositories for this workspace template
 
 - [ehki/jIEEEtran - 電気学会/IEEE, 日英両対応bstファイル](https://github.com/ehki/jIEEEtran)
 - [h-kitagawa/plistings - plistings パッケージ](https://github.com/h-kitagawa/plistings)
