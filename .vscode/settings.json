@@ -73,7 +73,7 @@
                 "-outdir=%OUTDIR%",
                 // when TEXINPUTS is requrired
                 // "-e",
-                // "$ENV{'TEXINPUTS'}='../style//:' . $ENV{'TEXINPUTS'}",
+                // "$ENV{'TEXINPUTS'}='../style//;' . $ENV{'TEXINPUTS'}",
                 "%DOC%",
             ],
         },
