@@ -1,10 +1,11 @@
 # LaTeX Workspace Template
 
-This template is VSCode Workspace for LaTeX which is installed by TeXLive.
+This template is VSCode Workspace for LaTeX installed with TeXLive.
 
 ## Environment
 
 The operation was confirmed in the following environments.
+
 ### Ubuntu
 
 Windows Subsystem for Linux, WSL2
@@ -27,18 +28,14 @@ UBUNTU_CODENAME=focal
 
 ### Windows
 
-Preparing
-<!--
 - Edition: Windows 10 Pro
-- Version: 21H1
-- OS build: 19043.1165
-- -->
+- Version: 21H2
 
 ## How to start LaTeX
 
 1. Install Visual Studio Code (VSCode).
-1. Install [VSCode-extention: LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
-2. Run `bash setup/setup.sh` (WSL-Ubuntu or other Linux distributions users) or `powershell setup\setup.ps1` (Windows users)
+2. Install [VSCode-extention: LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
+3. Run `bash setup/setup.sh` (WSL-Ubuntu or other Linux distributions users) or `powershell setup\setup.ps1` (Windows users)
 
 ## How to use for multi file projects
 
@@ -95,8 +92,6 @@ git clone <Main Repository URL> --recursive
 
 ## References
 
-[VSCode で最高の LaTeX 環境を作る](https://qiita.com/Gandats/items/d7718f12d71e688f3573)
-
-[TeXテンプレート](http://hooktail.org/computer/index.php?TeX%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8)
-
-[James-Yu/LaTeX-Workshop - Multi File projects](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#multi-file-projects)
+- [VSCode で最高の LaTeX 環境を作る](https://qiita.com/Gandats/items/d7718f12d71e688f3573)
+- [TeXテンプレート](http://hooktail.org/computer/index.php?TeX%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8)
+- [James-Yu/LaTeX-Workshop - Multi File projects](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#multi-file-projects)
