@@ -1,2 +1,8 @@
+# Test files
 test*
+
+# Output files
 out/
+
+# Temporary files
+__latexindent_temp.tex
