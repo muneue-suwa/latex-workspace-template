@@ -101,7 +101,7 @@
     "prefix": "figure-multiple-template",
     "description": "Add package: \\usepackage[subrefformat=parens]{subcaption}",
     "body": [
-      "\\begin{figure}[${1:hbtp}]",
+      "\\begin{figure}[${1:hbtp}]\\centering",
       "%%%%%%%%",
       "\\begin{minipage}[b]{${10:0.3}\\linewidth}",
       "\\centering",
